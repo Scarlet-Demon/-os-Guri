@@ -8,3 +8,9 @@ Programa desenvolvido por:
  - Aluno 3
  - Aluno 4
 */
+const prompt = require('prompt-sync')();
+function  minutesToSeconds() {;
+    let minutos = prompt('Qual o valor de minutos que gostaria de saber em segundos?');
+    console.log(`${minutos} minuto(s) é ${minutos*60} segundos.`);
+};
+minutesToSeconds();

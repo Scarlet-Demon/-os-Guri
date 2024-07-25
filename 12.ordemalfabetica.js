@@ -12,3 +12,16 @@ Programa desenvolvido por:
  - Aluno 3
  - Aluno 4
 */
+const prompt = require('prompt-sync')()
+let sort = []
+
+function alphabeticalOrder(){
+    let palavra = prompt('Digite uma palavra vou ordenar ela.').toLowerCase()
+    let i = 0
+    while(i<palavra.length){
+        sort.push(palavra[i])
+        i++
+    }
+    console.log(sort.sort())
+}
+alphabeticalOrder()
