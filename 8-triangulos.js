@@ -8,8 +8,19 @@ na primeira linha e adicionando um asterisco a cada linha subsequente.
 Você pode usar a função .repeat().
 
 Programa desenvolvido por:
- - Aluno 1
- - Aluno 2
- - Aluno 3
- - Aluno 4
+ - Guilherme Guimarães Szumski
+ -
 */
+
+const prompt = require ('prompt-sync') ({sigint: true});
+
+const n = prompt('Digite o número: ');
+drawTriangle(n)
+
+function drawTriangle(n){
+    let asterisco = '*';
+    for (let i = 0; i < n; i++) {
+        console.log(asterisco);
+        asterisco += '*';
+    }
+}
