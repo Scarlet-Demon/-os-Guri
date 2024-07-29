@@ -10,8 +10,25 @@ se o caracter faz parte da string) cada caractere da string e um contador
 para contar quantas vezes uma vogal aparece.
 
 Programa desenvolvido por:
- - Aluno 1
- - Aluno 2
- - Aluno 3
- - Aluno 4
+ - Gabriel
+ - Igor
+ - Nataly
+ - Guilherme
 */
+
+const prompt = require ('prompt-sync') ({sigint: true});
+
+const palavra = prompt('Digite uma palavra: ').toLowerCase()
+
+countVowels(palavra)
+
+
+function countVowels(palavra) {
+    let numeroVogais = 0
+    for (let i = 0; i < palavra.length; i++) {
+        if(palavra[i].includes('a') || palavra[i].includes('e')||palavra[i].includes('i')||palavra[i].includes('o')||palavra[i].includes('u')){
+            numeroVogais++;
+        }
+    }
+    console.log(numeroVogais);
+}
