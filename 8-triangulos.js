@@ -8,8 +8,10 @@ na primeira linha e adicionando um asterisco a cada linha subsequente.
 Você pode usar a função .repeat().
 
 Programa desenvolvido por:
- - Guilherme Guimarães Szumski
- -
+ - Gabriel
+ - Igor
+ - Nataly
+ - Guilherme
 */
 
 const prompt = require ('prompt-sync') ({sigint: true});
