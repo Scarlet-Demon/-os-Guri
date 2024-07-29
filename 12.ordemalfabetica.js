@@ -13,15 +13,11 @@ Programa desenvolvido por:
  - Guilherme
 */
 const prompt = require('prompt-sync')()
-let sort = []
 
-function alphabeticalOrder(){
-    let palavra = prompt('Digite uma palavra vou ordenar ela.').toLowerCase()
-    let i = 0
-    while(i<palavra.length){
-        sort.push(palavra[i])
-        i++
-    }
-    console.log(sort.sort())
+let palavra = []
+
+function alphabeticalOrder(palavra){
+    palavra = prompt('Digite uma palavra vou ordenar ela.').toLowerCase().split('').sort()
+    return palavra
 }
-alphabeticalOrder()
+console.log(alphabeticalOrder(palavra))
