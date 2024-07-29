@@ -3,7 +3,10 @@ Crie uma função chamada sumTwoNumbers que aceite dois números como parâmetro
 a soma deles.
 
 Programa desenvolvido por:
- - Guilherme Guimarães Szumski
+  - Gabriel
+ - Igor
+ - Nataly
+ - Guilherme
 */
 
 const prompt = require ('prompt-sync') ({sigint: true});
