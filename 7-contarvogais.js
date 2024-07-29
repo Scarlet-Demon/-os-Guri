@@ -15,3 +15,20 @@ Programa desenvolvido por:
  - Aluno 3
  - Aluno 4
 */
+
+const prompt = require ('prompt-sync') ({sigint: true});
+
+const palavra = prompt('Digite uma palavra: ').toLowerCase()
+
+countVowels(palavra)
+
+
+function countVowels(palavra) {
+    let numeroVogais = 0
+    for (let i = 0; i < palavra.length; i++) {
+        if(palavra[i].includes('a') || palavra[i].includes('e')||palavra[i].includes('i')||palavra[i].includes('o')||palavra[i].includes('u')){
+            numeroVogais++;
+        }
+    }
+    console.log(numeroVogais);
+}
