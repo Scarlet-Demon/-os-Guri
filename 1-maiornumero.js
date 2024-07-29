@@ -3,7 +3,10 @@ Crie uma função chamada findMax que aceita um array de números e retorne
 o maior número do array.
 
 Programa desenvolvido por:
+  - Gabriel
+ - Igor
  - Nataly
+ - Guilherme
 */
 
     function findMax(array) {
